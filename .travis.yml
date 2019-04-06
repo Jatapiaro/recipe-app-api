@@ -5,6 +5,9 @@ python:
 services:
   - docker
 
+notifications:
+  email: false
+
 before_script: pip install docker-compose
 
 script:
