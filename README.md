@@ -4,4 +4,10 @@
 2. docker build .
 3. Create your docker-composer.yml file
 4. docker-composer build
-5. Create DJANGO project `docker-compose run app sh -c "django-admin.py startproject app ."`
+
+## Create the django project
+`docker-compose run app sh -c "django-admin.py startproject app ."`
+
+
+# Run the tests
+`docker-compose run app sh -c "python manage.py test && flake8"`
