@@ -1,5 +1,5 @@
 .DS_STORE
-
+app/db.sqlite3
 # Virtualenv related
 bin/
 include/
