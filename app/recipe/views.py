@@ -48,6 +48,9 @@ class RecipeViewSet(viewsets.ModelViewSet):
         """ Return appropiate serializer class """
         if self.action == 'retrieve':
             return serializers.RecipeDetailSerializer
+        if self.action == 'list':
+            return serializers.RecipeDetailSerializer
+        
         return self.serializer_class
 
     def perform_create(self, serializer):
